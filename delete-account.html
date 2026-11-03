@@ -24,17 +24,21 @@
       <p class="eyebrow">Your account</p>
       <h1>Request Kurify account deletion</h1>
       <p>
-        Kurify plans to accept account-deletion requests by email. This process
-        must be verified before it is offered to users.
+        Kurify plans to accept account-deletion requests by email. The proposed
+        manual workflow has been tested in a separate non-production project
+        using fictional records. Production settings and the full retention
+        process have not yet been verified.
       </p>
       <p>
-        <strong>Proposed approach:</strong> After verifying a request, Kurify
-        intends to delete the account and associated data, including financial
-        data, except where specific information needs to be retained for a
-        documented, legitimate reason, such as security, fraud prevention, or
-        legal compliance. Any exception would be limited to the information
-        needed and disclosed with its reason and retention period. This approach
-        has not yet been implemented or verified.
+        <strong>Proposed approach:</strong> After verifying a request through
+        an existing verified phone number or email address, Kurify intends to
+        delete the account and associated data, including financial data,
+        except where specific information needs to be retained for a documented,
+        legitimate reason, such as security, fraud prevention, or legal
+        compliance. Any exception would be limited to the information needed
+        and disclosed with its reason and retention period. Kurify is
+        considering a 30-day completion target, but has not committed to or
+        verified that timeframe.
       </p>
       <ol>
         <li>
@@ -47,24 +51,28 @@
           passkey or other login secrets in the email.
         </li>
         <li>
-          Kurify will need to verify account ownership before processing the
-          request. The verification procedure and expected response time must
-          be confirmed.
+            Support will need to verify account ownership before processing the
+            request. The procedure for people who can no longer access their
+            verified contact method still needs to be established.
         </li>
       </ol>
       <div class="todo">
         <strong>Required before final publication:</strong> identify the account,
         profile, authentication, chat, financial, and backup data that will be
         deleted; any data that must be retained, why and for how long; how
-        requests will be verified and fulfilled; and the expected timeframe.
+        requests will be verified and fulfilled in production; and the
+        confirmed response timeframe. Backup retention has not been verified,
+        and Indian legal advice is needed before setting record-retention
+        periods.
       </div>
       <h2>Operator checklist</h2>
       <ul>
         <li>Put an obvious link to this page in the app's account options.</li>
         <li>Make the page usable without signing in or reinstalling the app.</li>
+        <li>Verify the tested workflow against production settings before launch.</li>
         <li>
-          Establish and test the manual workflow for both owners and members,
-          including Supabase, linked authentication, shared records, and backups.
+          Confirm Supabase, linked authentication, shared-record, and backup
+          deletion and retention behavior.
         </li>
         <li>
           Confirm the retention policy and communicate any legally required
