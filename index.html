@@ -86,7 +86,9 @@
           If you choose a UPI app, Kurify passes the owner's UPI ID and name,
           the amount, and a payment note to that app. The payment takes place
           in the selected UPI app; the Kuri owner records its receipt in
-          Kurify.
+          Kurify. The UPI app and payment providers may keep their own records
+          under their practices; deleting a Kurify account does not itself
+          delete those external records.
         </li>
         <li>
           If you print or share a receipt, its contents are sent to the
@@ -115,6 +117,15 @@
       </p>
 
       <h2>Retention and deletion</h2>
+      <p>
+        <strong>Proposed approach:</strong> After a verified deletion request,
+        Kurify intends to delete the account and associated data, including
+        financial data, except where specific information needs to be retained
+        for a documented, legitimate reason, such as security, fraud prevention,
+        or legal compliance. Any exception would be limited to the information
+        needed and disclosed with its reason and retention period. This approach
+        has not yet been implemented or verified.
+      </p>
       <div class="todo">
         <strong>Required before final publication:</strong> specify how long account
         details, messages, Kuri and financial records, and backups are kept;
