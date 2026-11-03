@@ -3,16 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Kurify Account Deletion - Draft</title>
+    <title>Kurify Account Deletion</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="draft-banner" role="note">
-      Public draft for review only, not the final account-deletion process.
-      The request process and retention details must be finalized and tested
-      before this page is submitted to Google Play.
-    </div>
     <header class="site-header">
       <a class="brand" href="index.html">Kurify</a>
       <nav aria-label="Privacy pages">
@@ -24,25 +18,11 @@
       <p class="eyebrow">Your account</p>
       <h1>Request Kurify account deletion</h1>
       <p>
-        Kurify plans to accept account-deletion requests by email. The proposed
-        manual workflow has been tested in a separate non-production project
-        using fictional records. Production settings and the full retention
-        process have not yet been verified.
+        Last updated: 3 November 2026. You can ask Kurify to delete your account
+        and associated data without signing in or reinstalling the app.
       </p>
-      <p>
-        <strong>Proposed approach:</strong> After verifying a request through
-        an existing verified phone number or email address, Kurify intends to
-        delete the account and associated data, including financial data,
-        except where specific information needs to be retained for a documented,
-        legitimate reason, such as security, fraud prevention, or legal
-        compliance. Any exception would be limited to the information needed
-        and disclosed with its reason and retention period. Kurify is
-        considering a 30-day completion target, but has not committed to or
-        verified that timeframe. Deletion is intended to cover both live and
-        backup databases. Otherwise, Kuri records are intended to be kept for 5
-        years after the Kuri's final due date, moved to a backup database for 3
-        more years, and then permanently deleted.
-      </p>
+
+      <h2>How to request deletion</h2>
       <ol>
         <li>
           Email
@@ -50,41 +30,50 @@
           with the subject "Kurify account deletion request."
         </li>
         <li>
-          Tell support how to identify your Kurify account. Never include your
-          passkey or other login secrets in the email.
+          Include your name, the mobile number registered to your Kurify
+          account, and whether you are a Kuri owner or member. Never include
+          your passkey or other login secrets.
         </li>
         <li>
-            Support will need to verify account ownership before processing the
-            request. The procedure for people who can no longer access their
-            verified contact method still needs to be established.
+          Kurify verifies your request. We first send a one-time code (OTP) to
+          the account's registered mobile number. If you no longer have that
+          number, we ask for details only the account holder would know, such as
+          your name and Kuri names, and, for members, may confirm with the
+          relevant Kuri owner. We may decline a request we cannot verify.
         </li>
       </ol>
-      <div class="todo">
-        <strong>Required before final publication:</strong> identify the account,
-        profile, authentication, chat, financial, and backup data that will be
-        deleted; confirm the 5-year and 3-year periods with a qualified Indian
-        adviser; verify how requests will be verified and fulfilled in
-        production; and confirm the response timeframe.
-      </div>
-      <h2>Operator checklist</h2>
-      <ul>
-        <li>Put an obvious link to this page in the app's account options.</li>
-        <li>Make the page usable without signing in or reinstalling the app.</li>
-        <li>Verify the tested workflow against production settings before launch.</li>
-        <li>
-          Confirm Supabase, linked authentication, shared-record, and backup
-          deletion and retention behavior.
-        </li>
-        <li>
-          Confirm the retention policy and communicate any legally required
-          exceptions to users.
-        </li>
-      </ul>
       <p>
-        See the <a href="index.html">privacy-policy draft</a> for the proposed
-        description of Kurify's data practices.
+        Kurify aims to confirm receipt promptly and complete verified deletion
+        requests within 30 days.
+      </p>
+
+      <h2>What is deleted</h2>
+      <p>
+        After verification, Kurify deletes your account and associated data,
+        including profile details, authentication information, group chat
+        messages, and Kuri and payment records, from both the live and backup
+        databases.
+      </p>
+
+      <h2>What may be kept</h2>
+      <p>
+        Specific records may be kept only where required for a documented
+        security, fraud-prevention, or legal reason. Any such exception is
+        limited to the information needed, and we will tell you what is kept,
+        why, and for how long. Records held by UPI apps, payment providers, or
+        other people, such as a Kuri owner or a recipient of a receipt, are
+        outside Kurify's control.
+      </p>
+
+      <h2>Retention if you do not request deletion</h2>
+      <p>
+        Kuri records and group chat messages are kept for 5 years after the
+        Kuri's final due date, then moved to a backup database for 3 more years
+        and permanently deleted. See the
+        <a href="index.html#retention-and-deletion">privacy policy</a> for
+        details.
       </p>
     </main>
-    <footer>Kurify privacy pages - draft, not the final deletion process.</footer>
+    <footer>Kurify account deletion</footer>
   </body>
 </html>
